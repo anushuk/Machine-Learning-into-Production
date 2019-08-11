@@ -1,0 +1,2 @@
+Information about model
+Gender mapping{'Female': 0, 'Male': 1}

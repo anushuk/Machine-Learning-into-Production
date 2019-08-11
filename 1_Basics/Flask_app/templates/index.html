@@ -1,0 +1,86 @@
+
+{% extends "layout.html" %}
+
+
+
+
+{% block head %}
+
+<script type="text/javascript">
+        $(function(){
+            $("form").on('submit', function(event){
+                var var1=$("#item1").val();
+                var var2=$("#item2").val();
+                var var3=$("#item3").val();
+                if(var1 && var2 && var3){
+                $("#warning").val();
+                $('#output').text("processing..").css({'font-size':'30px','margin':'60px auto', 'text-align':'center'});
+                    $.ajax({
+                        data :{
+                        item1:var1,
+                        item2:var2,
+                        item3:var3,
+                    },
+                    type : 'POST',
+                    url : '/_hrabg',
+                    }).done(function(data){
+                        if(data.result == 1){
+                            $('#output').text("Product will be purchased ").css({'color':'Green','font-size':'30px'});
+                        }
+                        else{
+                            $('#output').text("Product will not be puchased").css({'color':'Red','font-size':'30px'});
+                        }
+
+                        });
+                    return false;
+                }else{
+                    $("#warning").text("fill out all fields");
+                }
+                    event.prventDefault();
+
+                    });
+                });
+</script>
+
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid" style="margin:20px auto; background:linear-gradient(0deg, #ccc, #f0f0f0)">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 style="text-align:center;color:#4582ec">Social media add</h2>
+        </div>
+        <div class="col-md-8">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <select class="selectpicker form-control" id="item1">
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                    </select>
+                </div>
+
+                  <div class="form-group">
+                        <label>Age:(1-100)</label>
+                      <input class="input-sm" type="number" min="1" max="100" id="item2">
+                  </div>
+                  <div class="form-group">
+                        <label>Salary:(1-100000)</label>
+                      <input class="input-sm" type="number" min="1" max="100000" id="item3">
+                  </div>
+                <div class="sub">
+                <button id="submit" class="btn btn-primary" type="submit">submit </button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <h2 style="text-align:center;color:#5bc0de">Result</h2>
+            <p id="output" style="text-align:center;margin:0px auto;font-size:40px"></p>
+        </div>
+        <div class="col-md-12">
+    <p id="warning" style="text-align:center;margin:20px auto;font-size:20px;color:red"></p>
+
+</div>
+  </div>
+  </div>
+{% endblock %}
