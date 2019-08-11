@@ -1,5 +1,5 @@
 # Data-Science-test
-Assignment for ALIZ
+### Assignment for ALIZ
 
 ## 1) 1_Basics
 
@@ -28,7 +28,24 @@ The `Flask_app` folder contains the <b> Flask app </b> that deploys the already 
 4)Upload folder `1_Basics\Flask_app\` to your Gcloud console
 5)Navigate to folder where your `app.yaml` file is stored and run `gcloud init` and then `gcloud app deploy`
 
-## 2) 2_custom_estimator
+## 2) 2_Custom_Estimator
+
+The folder ` 2_Custom_Estimator` contains two file `estimator.py` and `main.py`
+
+2.1)`estimator.py` contains two classes as
+ <b>ThresholdBinarizer</b> : which optimises the threshold value to a specific metric called gini impurity
+ <b> custom_estimator </b> : this is use for binary classification
+ 
+2.2) `main.py` this calls the both the classed in <b> estimator.py</b> and built the model and prints the various metric to console
+
+To build the model navigate to `2_Custom_Estimator\` and run `python main.py`
+
+## 3)Data
+Folder `Data` contains the used dataset
+
+
+ 
+ 
 
 
 
