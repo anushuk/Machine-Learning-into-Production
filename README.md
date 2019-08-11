@@ -32,9 +32,10 @@ The `Flask_app` folder contains the <b> Flask app </b> that deploys the already 
 
 The folder ` 2_Custom_Estimator` contains two file `estimator.py` and `main.py`
 
-2.1)`estimator.py` contains two classes as
- <b>ThresholdBinarizer</b> : which optimises the threshold value to a specific metric called gini impurity
- <b> custom_estimator </b> : this is use for binary classification
+2.1) `estimator.py` contains two classes as
+
+ 1) <b>ThresholdBinarizer</b> : which optimises the threshold value to a specific metric called gini impurity
+ 2) <b> custom_estimator </b> : this is use for binary classification
  
 2.2) `main.py` this calls the both the classed in <b> estimator.py</b> and built the model and prints the various metric to console
 
