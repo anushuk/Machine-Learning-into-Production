@@ -22,9 +22,10 @@ The `Flask_app` folder contains the <b> Flask app </b> that deploys the already 
 4) In case you want to change the port navigate to `1_Basics\Flask_app\main.py` and change port in `app.run(host='localhost', port=8000, debug=True)`
 
 #### To deploy the model in Google Cloud
-1) Download and put your gcloud JSON service key to `1_Basics\Flask_app\`
-2) Navigate to `1.Basics\Flask_app\main.py ` and put the following command there `os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="<key.json>"` replace <key.json> with your JSON service key file name.
-3) Navigate to `1_Basics\Flask_app\main.py` and change the command `app.run(host='localhost', port=8000, debug=True)` to `app.run(debug=Fasle)`
+1) Download and put your gcloud JSON service key at `1_Basics\Flask_app\`
+2) Navigate to `1.Basics\Flask_app\main.py ` and put the following command there `os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="<key.json>"` replace <b><key.json></b> with your JSON service key file name.
+3) Navigate to `1_Basics\Flask_app\main.py` and change the command `app.run(host='localhost', port=8000, debug=True)` to `app.run(debug=Fasle)`.
+
 4)Upload folder `1_Basics\Flask_app\` to your Gcloud console
 5)Navigate to folder where your `app.yaml` file is stored and run `gcloud init` and then `gcloud app deploy`
 
