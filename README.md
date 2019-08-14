@@ -1,5 +1,5 @@
 # Data-Science-test
-### Assignment for ALIZ
+### Assignment 
 
 ## 1) 1_Basics
 
