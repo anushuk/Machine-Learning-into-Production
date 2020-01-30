@@ -1,4 +1,4 @@
-# Data-Science-test
+# Data Science test
 ### Assignment 
 
 ## 1) 1_Basics
