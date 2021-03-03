@@ -30,7 +30,7 @@ The `Flask_app` folder contains the <b> Flask app </b> that deploys the already 
 
 ## 2) 2_Custom_Estimator
 
-The folder ` 2_Custom_Estimator` contains two file `estimator.py` and `main.py`
+The folder ` 2_Custom_Estimator` contains two file `estimator.py` and `main.py` .
 
 2.1) `estimator.py` contains two classes as.
 
