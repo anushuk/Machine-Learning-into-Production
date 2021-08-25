@@ -3,7 +3,7 @@
 
 ## 1) 1_Basics
 
-The `1_Basics` folder contains contains two folder `Flask_app` and `model_build`
+The `1_Basics` folder contains contains two folder `Flask_app` and `model_build`.
 
 ### 1.1) model_build
 The `model_build` folder contains `main.py` file which builds the logistic regression model using dataset stored in folder `Data` in the  root directory.
